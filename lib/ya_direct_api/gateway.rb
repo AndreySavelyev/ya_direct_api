@@ -5,12 +5,11 @@ module Ya
 
       URLS = {
         production: "https://soap.direct.yandex.ru/json-api/v4/",
-        staging: "https://soap.direct.yandex.ru/json-api/v4/",
-        development: "https://api-sandbox.direct.yandex.ru/json-api/v4/"
+        sandbox: "https://api-sandbox.direct.yandex.ru/json-api/v4/"
       }
 
-      def initialize(env, config)
-        @url = URLS[env.to_sym]
+      def initialize(env, config, mode)
+        @url = URLS[mode]
         @config = config
       end
 
