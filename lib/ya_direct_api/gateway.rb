@@ -5,6 +5,7 @@ module Ya
 
       URLS = {
         production: "https://soap.direct.yandex.ru/json-api/v4/",
+        staging: "https://soap.direct.yandex.ru/json-api/v4/",
         development: "https://api-sandbox.direct.yandex.ru/json-api/v4/"
       }
 

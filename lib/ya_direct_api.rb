@@ -26,7 +26,7 @@ module Ya
       end
 
       def resolve_env
-        ENV['RAILS_ENV'] || ENV['RACK_ENV'] || 'development'
+        ENV['RAILS_ENV'] || 'development'
       end
 
     end
